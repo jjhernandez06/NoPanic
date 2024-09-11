@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <body>
+        <header>
+            <h1>Frases</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="frases.html">Frases</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Frases</title>
+    <style>
+        /* Estilos generales para la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Contenedor principal de la sección */
+        .frases-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .frases-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Contenedor de las imágenes */
+        .frases-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Estilos de las imágenes */
+        .frases-container img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease; /* Animación de transición */
+        }
+
+        /* Efecto al pasar el mouse sobre la imagen */
+        .frases-container img:hover {
+            transform: scale(1.2); /* Escala la imagen en un 20% */
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .frases-container {
+                flex-direction: column;
+            }
+
+            .frases-container img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="frases-section">
+        <h2>Nuestras Frases</h2>
+        <div class="frases-container">
+            <img src="img/frase3.jpeg" alt="Frase 1">
+            <img src="img/frase4.jpeg" alt="Frase 2">
+            <img src="img/frase1.jpeg" alt="Frase 3">
+            <img src="img/frase2.jpeg" alt="Frase 4">
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Designed by Ing.Hernández</p>
+</footer>
+</body>
+</html>
