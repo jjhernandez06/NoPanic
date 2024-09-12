@@ -80,8 +80,8 @@ footer {
     }
 
     nav ul li a {
-        padding: 15px 20px; /* Ajusta el padding para que los botones sean más grandes */
-        font-size: 18px; /* Tamaño de fuente ajustado para mejor legibilidad en pantallas pequeñas */
+        padding: 5px 14px; /* Ajusta el padding para que los botones sean más grandes */
+        font-size: 16px; /* Tamaño de fuente ajustado para mejor legibilidad en pantallas pequeñas */
     }
 }
 
