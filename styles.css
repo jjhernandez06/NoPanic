@@ -69,15 +69,18 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los botones horizontalmente */
     }
 
     nav ul li {
-        margin: 10px 0; /* Espacio vertical entre botones */
+        width: 45%; /* Hace que los botones ocupen la mitad del ancho del contenedor en pantallas pequeñas */
+        margin: 10px 0; /* Espacio vertical entre los botones */
+        box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
     }
 
     nav ul li a {
-        padding: 12px 25px; /* Padding ajustado para mejor apariencia en pantallas pequeñas */
-        font-size: 18px; /* Tamaño de fuente ajustado para mayor legibilidad en pantallas pequeñas */
+        padding: 15px 20px; /* Ajusta el padding para que los botones sean más grandes */
+        font-size: 18px; /* Tamaño de fuente ajustado para mejor legibilidad en pantallas pequeñas */
     }
 }
 
