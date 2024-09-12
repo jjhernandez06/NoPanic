@@ -18,54 +18,24 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    background-color: #333;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    white-space: nowrap; /* Evitar que los botones se dividan en varias líneas */
 }
 
 main {
     padding: 20px;
     margin: auto;
     max-width: 800px;
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
 }
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    nav ul {
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;  /* Los botones se apilan verticalmente en lugar de en línea */
-        margin: 10px 0;  /* Aumentar el margen entre los botones */
-    }
-
-    nav ul li a {
-        padding: 10px 20px;  /* Aumentar el tamaño del botón en pantallas pequeñas */
-        font-size: 20px;      /* Agrandar el texto para mejor legibilidad */
-    }
-}
-
-
-
 
 h2 {
     color: #555;
@@ -76,8 +46,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
+    position: relative; /* Elimina el position: fixed para que el footer no se superponga al contenido */
     width: 100%;
 }
 
