@@ -19,21 +19,23 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0; /* Asegura que no haya margen adicional en el <ul> */
+    display: flex; /* Muestra los elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas si es necesario */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 nav ul li {
-    display: inline-block; /* Cambiado de inline a inline-block para mejor control del padding y margen */
-    margin: 0 10px; /* Reducción del margen para evitar que los botones se monten */
+    margin: 10px; /* Espacio entre los botones */
 }
 
 nav ul li a {
     display: inline-block; /* Para que el padding y el borde se apliquen correctamente */
     background-color: #333;
     color: white;
-    padding: 5px 14px; /* Padding para dar tamaño de botón */
+    padding: 10px 20px; /* Padding para dar tamaño de botón */
     text-decoration: none;
     border-radius: 5px; /* Bordes redondeados */
-    font-size: 15px; /* Tamaño de fuente ajustado para una mejor apariencia de botón */
+    font-size: 16px; /* Tamaño de fuente ajustado para una mejor apariencia de botón */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido efecto de transición para hover */
     white-space: nowrap; /* Evita el salto de línea en el texto */
 }
@@ -66,9 +68,7 @@ footer {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     nav ul {
-        display: flex;
-        flex-direction: column; /* Los elementos de navegación se apilan verticalmente en pantallas pequeñas */
-        align-items: center; /* Centra los elementos verticalmente */
+        flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
     }
 
     nav ul li {
