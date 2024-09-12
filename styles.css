@@ -59,7 +59,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        padding: 15px 30px;  /* Aumentar el tamaño del botón en pantallas pequeñas */
+        padding: 10px 20px;  /* Aumentar el tamaño del botón en pantallas pequeñas */
         font-size: 20px;      /* Agrandar el texto para mejor legibilidad */
     }
 }
