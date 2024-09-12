@@ -18,16 +18,29 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Asegura que no haya margen adicional en el <ul> */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Cambiado de inline a inline-block para mejor control del padding y margen */
+    margin: 0 10px; /* Reducción del margen para evitar que los botones se monten */
 }
 
 nav ul li a {
+    display: inline-block; /* Para que el padding y el borde se apliquen correctamente */
+    background-color: #333;
     color: white;
+    padding: 5px 14px; /* Padding para dar tamaño de botón */
     text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 15px; /* Tamaño de fuente ajustado para una mejor apariencia de botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido efecto de transición para hover */
+    white-space: nowrap; /* Evita el salto de línea en el texto */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
 }
 
 main {
@@ -48,6 +61,24 @@ footer {
     padding: 1em 0;
     position: relative; /* Elimina el position: fixed para que el footer no se superponga al contenido */
     width: 100%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Los elementos de navegación se apilan verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacio vertical entre botones */
+    }
+
+    nav ul li a {
+        padding: 12px 25px; /* Padding ajustado para mejor apariencia en pantallas pequeñas */
+        font-size: 18px; /* Tamaño de fuente ajustado para mayor legibilidad en pantallas pequeñas */
+    }
 }
 
 /* Estilos específicos para la página "Sobre Nosotros" */
