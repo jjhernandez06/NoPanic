@@ -76,11 +76,11 @@ footer {
 
     nav ul li {
         flex: 1 0 45%; /* Ajusta el ancho de los botones para que quepan dos por fila en pantallas pequeñas */
-        margin: 10px; /* Espacio entre los botones */
+        margin: 8px; /* Espacio entre los botones */
     }
 
     nav ul li a {
-        padding: 5px 14px; /* Ajusta el padding para que los botones sean más grandes */
+        padding: 6px 14px; /* Ajusta el padding para que los botones sean más grandes */
         font-size: 16px; /* Tamaño de fuente ajustado para mejor legibilidad en pantallas pequeñas */
     }
 }
