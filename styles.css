@@ -26,6 +26,7 @@ nav ul {
 
 nav ul li {
     margin: 10px; /* Espacio entre los botones */
+    flex: 1 0 21%; /* Ajusta el tamaño de los botones para que quepan en dos filas en pantallas pequeñas */
 }
 
 nav ul li a {
@@ -38,6 +39,7 @@ nav ul li a {
     font-size: 16px; /* Tamaño de fuente ajustado para una mejor apariencia de botón */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido efecto de transición para hover */
     white-space: nowrap; /* Evita el salto de línea en el texto */
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
 nav ul li a:hover {
