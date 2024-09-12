@@ -24,18 +24,19 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px; /* Espacio horizontal reducido entre botones */
 }
 
 nav ul li a {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px; /* Padding reducido para hacer los botones más compactos */
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
     transition: background-color 0.3s ease;
-    white-space: nowrap; /* Evitar que los botones se dividan en varias líneas */
+    display: inline-block; /* Asegura que el padding se aplique correctamente */
+    line-height: 1.2; /* Ajuste de la altura de la línea para reducir la altura del botón */
 }
 
 main {
@@ -53,25 +54,20 @@ nav ul li a:hover {
     nav ul {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra los botones */
-        gap: 10px; /* Añade espacio entre los botones */
+        align-items: center;
         padding: 0;
-        margin: 0;
     }
 
     nav ul li {
-        display: block;  /* Los botones se apilan verticalmente */
-        margin: 10px 0;  /* Aumentar el margen entre los botones */
-        width: 100%; /* Hacer que los botones ocupen el 100% del ancho del contenedor */
+        display: block; /* Los botones se apilan verticalmente en pantallas pequeñas */
+        margin: 5px 0; /* Espacio vertical reducido entre botones */
+        width: 100%;
         max-width: 300px; /* Limitar el ancho máximo de los botones */
     }
 
     nav ul li a {
-        padding: 15px 30px;  /* Aumentar el tamaño del botón */
-        font-size: 20px;      /* Agrandar el texto */
-        display: block; /* Asegura que el enlace sea un bloque completo */
-        text-align: center; /* Centra el texto dentro de los botones */
-        width: 100%; /* Hacer que los enlaces ocupen todo el ancho de su contenedor */
+        padding: 8px 20px; /* Padding reducido para móviles */
+        font-size: 16px; /* Ajuste del tamaño de fuente para móviles */
     }
 }
 
