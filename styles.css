@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -34,6 +34,7 @@ nav ul li a {
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evitar que los botones se dividan en varias líneas */
 }
 
 main {
@@ -45,6 +46,26 @@ main {
 nav ul li a:hover {
     background-color: #555;
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;  /* Los botones se apilan verticalmente en lugar de en línea */
+        margin: 10px 0;  /* Aumentar el margen entre los botones */
+    }
+
+    nav ul li a {
+        padding: 15px 30px;  /* Aumentar el tamaño del botón en pantallas pequeñas */
+        font-size: 20px;      /* Agrandar el texto para mejor legibilidad */
+    }
+}
+
+
+
 
 h2 {
     color: #555;
