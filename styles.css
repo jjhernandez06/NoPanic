@@ -68,14 +68,13 @@ footer {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
-        align-items: center; /* Centra los botones horizontalmente */
+        flex-direction: row; /* Muestra los botones en fila en pantallas pequeñas */
+        justify-content: space-around; /* Distribuye los botones uniformemente */
     }
 
     nav ul li {
-        width: 45%; /* Hace que los botones ocupen la mitad del ancho del contenedor en pantallas pequeñas */
-        margin: 10px 0; /* Espacio vertical entre los botones */
-        box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+        flex: 1 0 45%; /* Ajusta el ancho de los botones para que quepan dos por fila en pantallas pequeñas */
+        margin: 10px; /* Espacio entre los botones */
     }
 
     nav ul li a {
