@@ -34,7 +34,7 @@ main {
 }
 
 h2 {
-    color: #555;
+    color: hwb(61 20% 16%)22% 18%;
 }
 
 footer {
@@ -45,41 +45,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Media Queries para pantallas más pequeñas (smartphones) */
-@media (max-width: 768px) {
-    header {
-        padding: 0.5em;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    main p, main h3 {
-        font-size: 1em;
-        line-height: 1.5em;
-        padding: 0 10px;
-    }
-
-    footer {
-        font-size: 0.9em;
-        padding: 0.5em;
-    }
 }
