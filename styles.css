@@ -24,19 +24,19 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px; /* Espacio horizontal reducido entre botones */
+    margin: 0 10px; /* Reducimos un poco el margen horizontal */
 }
 
 nav ul li a {
     background-color: #333;
     color: white;
-    padding: 5px 15px; /* Padding reducido para hacer los botones más compactos */
+    padding: 8px 15px; /* Reducimos el padding para hacerlos más compactos */
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    font-size: 16px; /* Reducimos un poco el tamaño del texto */
     transition: background-color 0.3s ease;
-    display: inline-block; /* Asegura que el padding se aplique correctamente */
-    line-height: 1.2; /* Ajuste de la altura de la línea para reducir la altura del botón */
+    white-space: nowrap; /* Evitar que los botones se dividan en varias líneas */
+    display: block;
 }
 
 main {
@@ -55,19 +55,21 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        gap: 5px; /* Reducimos el espacio entre botones */
     }
 
     nav ul li {
-        display: block; /* Los botones se apilan verticalmente en pantallas pequeñas */
-        margin: 5px 0; /* Espacio vertical reducido entre botones */
+        display: block;  /* Los botones se apilan verticalmente */
+        margin: 5px 0;  /* Reducimos el margen vertical */
         width: 100%;
         max-width: 300px; /* Limitar el ancho máximo de los botones */
     }
 
     nav ul li a {
-        padding: 8px 20px; /* Padding reducido para móviles */
-        font-size: 16px; /* Ajuste del tamaño de fuente para móviles */
+        padding: 10px 20px;  /* Mantener un padding reducido en pantallas pequeñas */
+        font-size: 18px;      /* Ajuste del tamaño del texto */
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -117,3 +119,4 @@ footer {
         line-height: 1.5em;
     }
 }
+
