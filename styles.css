@@ -34,7 +34,7 @@ main {
 }
 
 h2 {
-    color: hwb(61 20% 16%)22% 18%;
+    color: #555;
 }
 
 footer {
@@ -42,7 +42,40 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Estilos específicos para la página "Sobre Nosotros" */
+.about-section {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.about-section h2, .about-section h3 {
+    color: #555;
+}
+
+.about-section p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Media Queries solo para la sección de "Sobre Nosotros" */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section h2, .about-section h3 {
+        font-size: 1.5em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
 }
