@@ -94,7 +94,7 @@ footer {
 }
 
 .about-section h2, .about-section h3 {
-    color: #555;
+    color: hwb(0 4% 27%);
 }
 
 .about-section p {

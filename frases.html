@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-    <body>
-        <header>
-            <h1>Frases</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Sobre nosotros</a></li>
-                    <li><a href="frases.html">Frases</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +10,56 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            min-height: 100vh; /* Asegura que el body siempre ocupe todo el alto de la pantalla */
             background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap; /* Permite que los botones se envuelvan en varias filas */
+            justify-content: center; /* Centra los botones horizontalmente */
+        }
+
+        nav ul li {
+            margin: 10px; /* Espacio entre los botones */
+            flex: 1 0 21%; /* Ajusta el tamaño de los botones para que quepan en dos filas en pantallas pequeñas */
+        }
+
+        nav ul li a {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            display: block; /* Hace que el enlace ocupe todo el espacio del li */
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: row;
+            }
+
+            nav ul li {
+                flex: 1 0 40%; /* Se ajusta a dos filas */
+            }
         }
 
         /* Contenedor principal de la sección */
@@ -38,7 +72,7 @@
         .frases-section h2 {
             font-size: 2em;
             margin-bottom: 20px;
-            color: #333;
+            color: #ca0d0d;
         }
 
         /* Contenedor de las imágenes */
@@ -77,21 +111,31 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Frases</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="frases.html">Frases</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="frases-section">
         <h2>Nuestras Frases</h2>
         <div class="frases-container">
-            <img src="img/frase3.jpeg" alt="Frase 1">
-            <img src="img/frase4.jpeg" alt="Frase 2">
-            <img src="img/frase1.jpeg" alt="Frase 3">
-            <img src="img/frase2.jpeg" alt="Frase 4">
+            <img src="img/frase5.jpeg" alt="Frase 1">
+            <img src="img/frase3.jpeg" alt="Frase 2">
+            <img src="img/frase4.jpeg" alt="Frase 3">
+            <img src="img/frase1.jpeg" alt="Frase 4">
+            <img src="img/frase2.jpeg" alt="Frase 5">
         </div>
     </section>
 
-</body>
-
-<footer>
-    <p>&copy; 2024 Designed by Ing.Hernández</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Designed by Ing.Hernández</p>
+    </footer>
 </body>
 </html>
